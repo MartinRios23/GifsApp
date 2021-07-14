@@ -13,8 +13,6 @@ export class BusquedaComponent{
 
   constructor(private gifService:GifServiceService){}
 
-
-
   buscar(){
     
     const valorBusqueda = this.txtBuscar.nativeElement.value;

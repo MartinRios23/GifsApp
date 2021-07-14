@@ -1,5 +1,12 @@
 <div class="col">
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam sunt
-    voluptas aperiam animi voluptatibus neque, deserunt, hic adipisci laudantium
-    consectetur nisi eos cumque dolores veniam! Fuga quas nihil soluta quia?
+  <div class="row">
+    <div class="col-md4 col-sm-6" *ngFor="let gif of resultados">
+      <div class="card">
+        <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top" />
+        <div class="card-body">
+          <p class="card-text">{{gif.title}}</p>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
